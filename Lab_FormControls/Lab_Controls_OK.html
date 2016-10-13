@@ -86,10 +86,27 @@
 				<div class="ui-block-b"><input type="submit" name="btnCancel" value="Cancel" /></div>
 			</div>
 
+		<hr>
+		<span id="debug"></span>
+		<input type="button" id="btnTest" value="test" />
+		
+
 			</form>
 		</div>
 		<!-- page content -->
 	</div>
 	<!-- page -->
+	
+	
+	<script>
+		$("#btnTest").click(function () {
+			var s = $("#sltOnOff").val();
+			$("#sltOnOff").val("off").slider("refresh");
+			$("#debug").html(s)
+		});
+	</script>
+	
+	
+	
 </body>
 </html>
